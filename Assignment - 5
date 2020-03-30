@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Registration Form
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    
+    <script src="asg-5-adv-styles.js"></script>
+</head>
+<body background="1.png">
+	<center>
+<fieldset>
+		<legend>Registration Form</legend>
+<form action="form.php" method="post" >
+		
+	Name <input type="text" name="name"  pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$"  required>
+						<br>
+						<br>
+	Email <input type="email" name="email"  pattern="[0-9a-z._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+	<br>
+	<br>
+	Mobile No. <input type="tel" name="telephone"  pattern="[789][0-9]{9}" autocomplete="off"  required>
+	<br>
+	<br>
+	Post <select id="select" name="profession" onblur="change_work_name()" required>
+		<option> </option>
+							<option>Student</option>
+							<option>Faculty Member</option>
+                            <option>Professional</option>
+                            <option>Company Representative</option>
+						</select>	
+						<br>
+						<br>
+	Company Name <input type="text" name="workname"  >
+	<br>
+	<br>
+	<button>
+		Submit
+	</button>		
+</form>
+</fieldset>
+</center>
+</body>
+</html>
