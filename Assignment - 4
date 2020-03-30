@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="info.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wraper">
+        <div class="header">
+            Student Information
+        </div>
+        <form action="pr5.php"  onsubmit="return validateForm()" name="myForm" method="POST">
+        <div class="form">
+            <div class="inputfield">
+               <label>Name: </label>
+               <input type="text" class="input" name="fname" required>
+            </div>  
+             
+            <div class="inputfield">
+                <label>ID </label>
+                <input type="number" class="input" name="number" required>
+             </div> 
+            <div class="inputfield">
+               <label>Password: </label>
+               <input type="password" class="input" name="pass" pattern="{8,}">
+            </div>  
+           <div class="inputfield">
+               <label>Confirm Password: </label>
+               <input type="password" class="input" name="cpass">
+            </div>  
+             <div class="inputfield">
+               <label>Gender</label>
+               <div class="gender">
+                 <select>
+                   <option value="">Select</option>
+                   <option value="male" name="gender">Male</option>
+                   <option value="female" name="gender">Female</option>
+                  
+                 </select>
+               </div>
+            </div> 
+            <div class="inputfield">
+                <label>City: </label>
+                <input type="text" class="input" name="city" required>
+             </div> 
+           <div class="inputfield">
+               <label>Phone Number: </label>
+               <input type="text" class="input" name="phone" required>
+            </div>  
+           <div class="inputfield">
+             <input type="submit" value="Register" class="btn">
+           </div>
+         </div>
+        </form>
+    </div>
+    
+</body>
+</html>
