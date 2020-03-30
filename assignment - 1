@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Info</title>
+</head>
+<body background="1.png">
+    <header>
+        <img src="a.jpg" alt="">
+    </header>
+    <div id="layout">
+        <h1>About Me</h1>
+        <div id="inner-layout">
+            <div class="col-1">
+                <div id="img"></div>
+            </div>
+            <div class="col-2" style="color: black">
+                <h3>About my Hobbies!</h3>
+                <p style="color: black">A Cricket Lover & web designer who works for th well fare of others, alse loves to eat and sleep!
+                </p>
+                <div class="skills">
+                    <div class="skill s1">
+                        <p>Cricket</p>
+                    </div>
+                    <div class="skill s2">
+                        <p>Playing guitar</p>
+                    </div>
+                    <div class="skill s3">
+                        <p>Music</p>
+                    </div>
+                    <div class="skill s4">
+                        <p>Eating</p>
+                    </div>
+                    <div class="skill s5">
+                        <p>Sleeping</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-3">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
